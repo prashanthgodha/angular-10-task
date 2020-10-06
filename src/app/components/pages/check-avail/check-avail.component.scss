@@ -1,0 +1,99 @@
+.bg_white {
+  position: relative;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+
+  .top_div {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 5px -5px #000;
+  }
+}
+
+.box_shadow {
+  box-shadow: 0 4px 5px -5px #000;
+}
+
+.custom-control-label {
+  padding-top: 3px;
+}
+
+.check1.custom-control-label::after {
+  background: white !important;
+  border-radius: 5px !important;
+  border: 1px solid !important;
+}
+
+.fs_26 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.time {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px;
+  border: 0;
+  opacity: 0.7;
+  outline: 0;
+  cursor: pointer;
+  margin-bottom: 15px;
+
+  &.small_check1 {
+    padding: 9px 0 0 0;
+    border-radius: 5px;
+    width: 15px;
+    margin: 0;
+    vertical-align: sub;
+  }
+
+  &.small_check2 {
+    padding: 16px 0 0 0;
+    background-color: #000000;
+    border-radius: 5px;
+    width: 15px;
+    margin: 0;
+    vertical-align: sub;
+  }
+
+  &.small_check3 {
+    padding: 12px 0 0 0;
+    border-radius: 5px;
+    border: 2px solid #068617;
+    width: 15px;
+    margin: 0;
+    vertical-align: sub;
+  }
+}
+
+.bg_black {
+  background-color: #292d42;
+  color: #ffffff;
+}
+
+.orange_half {
+  background-color: #f15a2b;
+  height: 15px;
+  margin: 0 -15px;
+  border-radius: 0 0 10px 10px;
+
+  &.small_check {
+    margin: 0;
+    height: 7px;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.active {
+  border: 2px solid green;
+}
+
+.col-md-4 {
+  padding: 0;
+}

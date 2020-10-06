@@ -1,0 +1,60 @@
+<div class="screen1">
+  <div class="bg_white">
+    <div class="orange">
+      <p class="book pt-3 pb-3">BOOK A TABLE</p>
+      <div class="text-center">
+        <div class="circle">
+          <img src="assets/images/image.png" alt="" />
+        </div>
+      </div>
+
+      <div class="ml-3 mr-3 calander">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Select Dates</mat-label>
+          <input matInput [min]="minDate" [matDatepicker]="picker" />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Select Guests</mat-label>
+          <mat-select [(value)]="selected">
+            <mat-option>None</mat-option>
+            <mat-option value="option1"
+              ><mat-radio-button value="1"
+                >10+ Guests</mat-radio-button
+              ></mat-option
+            >
+            <mat-option value="option2"
+              ><mat-radio-button value="2"
+                >1 Guest</mat-radio-button
+              ></mat-option
+            >
+            <mat-option value="option3"
+              ><mat-radio-button value="3"
+                >2 Guests</mat-radio-button
+              ></mat-option
+            >
+            <mat-option value="option4"
+              ><mat-radio-button value="4"
+                >3 Guests</mat-radio-button
+              ></mat-option
+            >
+            <mat-option value="option5"
+              ><mat-radio-button value="5"
+                >4+ Guests</mat-radio-button
+              ></mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <button class="btn check_avail" [routerLink]="['/check-avail']">
+        Check Availability
+      </button>
+    </div>
+  </div>
+</div>

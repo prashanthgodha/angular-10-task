@@ -1,0 +1,72 @@
+<div class="screen1">
+  <div class="bg_white">
+    <div class="top_div pt-3 pb-3 text-center">
+      <span
+        class="float-left pointer outline-0 blue_color"
+        [routerLink]="['/check-avail']"
+        ><i class="fas fa-chevron-left fa_icon"></i>Back</span
+      ><span class="mr-5"><b>Customer Details</b></span>
+    </div>
+    <div class="ml-3 mr-3 mt-3">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input matInput />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat_bg">
+        <mat-label>Select an Occasion</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="option11"
+            ><mat-radio-button value="11"
+              >Birthday</mat-radio-button
+            ></mat-option
+          >
+          <mat-option value="option22"
+            ><mat-radio-button value="22"
+              >Anniversary</mat-radio-button
+            ></mat-option
+          >
+          <mat-option value="option33"
+            ><mat-radio-button value="33">Funeral</mat-radio-button></mat-option
+          >
+          <mat-option value="option44"
+            ><mat-radio-button value="44"
+              >Chirstmas</mat-radio-button
+            ></mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Additional info</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <div class="mt-5 pt-5">
+        <mat-slide-toggle
+          >I accept to store my data for the purpose of managing table
+          reservations and orders.</mat-slide-toggle
+        >
+      </div>
+      <div class="mt-4">
+        <mat-slide-toggle
+          >I would like to receive updates about products, services, promotions
+          and special events.</mat-slide-toggle
+        >
+      </div>
+    </div>
+    <button class="btn check_avail" [routerLink]="['/check-avail']">
+      Book Now
+    </button>
+  </div>
+</div>

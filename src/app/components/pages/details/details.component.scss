@@ -1,0 +1,24 @@
+.bg_white {
+  position: relative;
+  background-color: #f1f1f1;
+  height: 100vh;
+
+  .top_div {
+    background-color: #ffffff;
+    box-shadow: 0 4px 5px -5px #000;
+  }
+}
+
+.check_avail {
+  position: unset;
+  top: unset;
+  left: unset;
+  transform: unset;
+  margin: 40px auto 0 40px;
+}
+::ng-deep.mat_bg.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+  background-image: url("../../../../assets/images/Birthday_Cake.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+}
